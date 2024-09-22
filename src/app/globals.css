@@ -30,4 +30,44 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .marquee-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  .marquee {
+    display: flex;
+    gap: 2rem;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+  }
+
+  /* .tech-stack-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+
+  .techStackCard img {
+    width: 50px;
+    height: 50px;
+  } */
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 }
